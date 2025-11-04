@@ -1,0 +1,86 @@
+/* Fuente y fondo general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/* Encabezado con logo */
+.header {
+  margin: 0;
+  background-image: url("imagenes/guitarra-landing.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 42%;
+}
+
+.icono {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+/* Contenedor del formulario */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15cm;
+}
+
+/* Caja y color del formulario */
+.formulario {
+  background-color: #d3d3d3;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+/* Campos del formulario */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+/* Botón */
+button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Botón aclarado al pasar el mouse */
+button:hover {
+  background-color: #333;
+}
+
+/* Texto de registro */
+.registro {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.registro a {
+  color: black;
+  text-decoration: underline;
+}

@@ -1,0 +1,68 @@
+
+
+/* Fondo general con imagen */
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-image: url("imagenes/guitarra-landing.jpg"); /* cambia la ruta si hace falta */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Encabezado con logo */
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 44%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.icono {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+/* Contenido central */
+.contenido {
+  flex: 1; /* ocupa todo el espacio restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  align-items: center; /* centra horizontalmente */
+  text-align: center;
+  gap: 20px;
+}
+
+/* Texto principal */
+.contenido h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Botón */
+.boton {
+  background-color: black;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Efecto al pasar el mouse */
+.boton:hover {
+  background-color: #333;
+}

@@ -1,0 +1,84 @@
+/* cerrarsesion.css - estilos para la página de cierre de sesión */
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* Header (igual estilo que el resto de la app) */
+.header {
+  background: #f2f2f2;
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box {
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.nombre-logo {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Contenido centrado */
+.centro {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Caja del mensaje */
+.mensaje-caja {
+  background: #f0f0f0;
+  padding: 32px 36px;
+  border-radius: 10px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.mensaje-caja h2 {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+}
+
+.mensaje-caja p {
+  margin: 0 0 18px 0;
+  color: #333;
+}
+
+/* Botón (enlace estilizado) */
+.boton {
+  display: inline-block;
+  background-color: #0d4a4f;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.boton:hover {
+  background-color: #12666d;
+}
