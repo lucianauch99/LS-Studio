@@ -9,9 +9,8 @@ $database = "loopstudio_db";
 $conexion = new mysqli($nombreservidor, $nombreusuario, $contrasena, $database);
 
 // verifico la conexión 
-if ($conexion->connect_errno) { 
+if ($conexion->connect_errno) {
     die("Error de conexión: " . $conexion->connect_error);
 }
 
 // no echo para evitar 'headers already sent'
-?>

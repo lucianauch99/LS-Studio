@@ -1,8 +1,6 @@
-
-
 /* mi fondo gral de landing con la imagen */
 body {
-  margin:0;
+  margin: 0;
   font-family: Arial, sans-serif;
   background-image: url("imagenes/guitarra-landing.jpg");
   background-size: cover;
@@ -19,6 +17,7 @@ body {
   align-items: center;
   padding-left: 44%;
 }
+
 /* mi logo */
 
 .logo {
@@ -27,6 +26,7 @@ body {
   font-size: 22px;
   font-weight: bold;
 }
+
 /* mi icono LS */
 
 .icono {
@@ -39,11 +39,14 @@ body {
 
 /* Contenido central */
 .contenido {
-  flex: 1; /* ocupa todo el espacio restante */
+  flex: 1;
+  /* ocupa todo el espacio restante */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centra verticalmente */
-  align-items: center; /* centra horizontalmente */
+  justify-content: center;
+  /* centra verticalmente */
+  align-items: center;
+  /* centra horizontalmente */
   text-align: center;
   gap: 20px;
 }

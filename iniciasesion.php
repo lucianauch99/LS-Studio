@@ -45,11 +45,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-      <!-- mi header/encabezado con logo -->
+    <!-- mi header/encabezado con logo -->
     <header class="header">
-        <h1 class="logo"><span class="icono">LS</span> Loop Studio</h1>
+        <h1 class="logo"> <span class="icono">LS</span> Loop Studio</h1>
     </header>
-  <!-- mi contenido principal con el formulario -->
+    <!-- mi contenido principal con el formulario -->
     <main class="contenedor">
         <div class="formulario">
             <h2>Inicia sesión en tu cuenta</h2>

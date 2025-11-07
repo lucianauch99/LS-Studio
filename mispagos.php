@@ -59,23 +59,23 @@ $nombreUsuario = $_SESSION['NOMBRE_USUARIO'];
 
 <body>
 
-     <!-- mi header con el logo -->
+    <!-- mi header con el logo -->
     <header class="header">
-        <h1 class="logo"><span class="icono">LS</span> Loop Studio</h1>
+        <h1 class="logo"> <span class="icono">LS</span> Loop Studio</h1>
     </header>
-    <!-- mi contenido principal -->
-  <!-- mi aside lateral izquierda-->
+
+    <!-- mi aside lateral izquierda-->
     <div class="contenedor">
         <aside class="aside">
             <ul>
                 <li><a href="pagppal.php">Planes</a></li>
-                <li> <a href="misreservas.php">Mis reservas</a></li>
+                <li><a href="misreservas.php">Mis reservas</a></li>
                 <li class="activo"><a href="mispagos.php">Mis pagos</a></li>
                 <li><a href="calendario.php">Calendario</a></li>
                 <li><a href="cerrarsesion.php">Cerrar sesión</a></li>
             </ul>
         </aside>
-  <!-- mi contenido principal con el plan -->
+        <!-- mi contenido principal con el plan -->
 
         <main class="main">
             <h1>Mis pagos</h1>
@@ -84,8 +84,8 @@ $nombreUsuario = $_SESSION['NOMBRE_USUARIO'];
                     <img src="imagenes/guitarra-landing.jpg" alt="Plan Starter Beat">
                     <div class="card-content">
                         <h3>Starter Beat</h3>
-                        <p>1 vez a la semana</p>
-                        <p class="subtexto">Ideal para iniciarse o probar</p>
+                        <p>Comienza tu plan</p>
+                        <p class="subtexto">Válido por un mes</p>
                         <button>Comprado</button>
                     </div>
                 </div>

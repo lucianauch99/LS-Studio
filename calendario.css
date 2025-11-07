@@ -2,36 +2,37 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fff;
-    color: #222;
+    color: #000000;
 }
-
+/* el encabezado con logo */
 .header {
-    background: #f2f2f2;
-    padding: 10px 30px;
+    background-image: url("imagenes/guitarra-landing.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding-left: 80px;
 }
+
+/* mi logo Loop studio centrado visualmente*/
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.logo-box {
-    background: #000;
-    color: #fff;
+    font-size: 22px;
     font-weight: bold;
-    padding: 8px 12px;
+    margin-left: 42%;
+}
+
+/* caja negra LS */
+.icono {
+    background-color: black;
+    color: white;
+    padding: 10px;
     border-radius: 5px;
+    margin-right: 8px;
 }
-
-.nombre-logo {
-    font-size: 18px;
-    font-weight: 600;
-}
-
 .contenedor {
     display: flex;
     min-height: calc(100vh - 60px);
@@ -52,7 +53,6 @@ body {
 
 .aside li {
     padding: 12px 20px;
-    cursor: pointer;
 }
 
 .aside li:hover {
@@ -84,16 +84,8 @@ body {
     display: inline-block;
     background: #f0f0f0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
     width: 360px;
     padding-bottom: 20px;
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
 }
 
 .card-content {
@@ -101,13 +93,13 @@ body {
 }
 
 .card-content h3 {
-    margin: 0 0 10px 0;
+    margin: 0;
     font-size: 20px;
     font-weight: bold;
 }
 
 .card-content p {
-    margin: 8px 0;
+    margin: 8px;
 }
 
 .card-content .subtexto {
@@ -115,29 +107,14 @@ body {
     color: #555;
 }
 
-.card-content button {
-    margin-top: 10px;
-    background-color: #47b13b;
-    color: #fff;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-.card-content button:hover {
-    background-color: #3a942f;
-}
-
 /* --- Ajustes específicos para la sección de calendario --- */
 .card-content ul {
-    list-style: disc;
-    margin: 20px auto;
+    list-style:circle;
+    margin: 20px;
     padding-left: 40px;
     text-align: left;
 }
 
 .card-content li {
-    margin: 8px 0;
+    margin: 8px;
 }

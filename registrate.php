@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // ya existe un usuario con ese email, da un error y refresca la pag
     if ($resultado && $resultado->num_rows > 0) {
-        header('Location: registrate.php?error=1'); 
+        header('Location: registrate.php?error=1');
         exit;
     }
 
@@ -47,13 +47,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="registrate.css" />
+    <link rel="stylesheet" href="registrate.css">
 </head>
 
 <body>
     <!-- mi header con el logo -->
     <header class="header">
-        <h1 class="logo"><span class="icono">LS</span> Loop Studio</h1>
+        <h1 class="logo"> <span class="icono">LS</span> Loop Studio</h1>
     </header>
     <!-- mi contenido principal -->
 

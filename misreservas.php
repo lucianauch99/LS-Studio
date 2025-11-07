@@ -35,15 +35,13 @@ if ($resultado && $resultado->num_rows > 0) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./misreservas.css">
+    <link rel="stylesheet" href="misreservas.css">
 </head>
 
 <body>
     <!-- mi header con el logo -->
     <header class="header">
-        <h1 class="logo">
-            <span class="icono">LS</span> Loop Studio
-</h1>
+        <h1 class="logo"> <span class="icono">LS</span> Loop Studio</h1>
     </header>
     <!-- mi contenido principal -->
 

@@ -30,9 +30,9 @@ $tienePlan = isset($_SESSION['TIENE_PLAN']) && $_SESSION['TIENE_PLAN'] === true;
 </head>
 
 <body>
-     <!-- mi header con el logo -->
+    <!-- mi header con el logo -->
     <header class="header">
-        <h1 class="logo"><span class="icono">LS</span> Loop Studio</h1>
+        <h1 class="logo"> <span class="icono">LS</span> Loop Studio</h1>
     </header>
     <!-- mi contenido principal -->
     <div class="contenedor">
@@ -41,7 +41,7 @@ $tienePlan = isset($_SESSION['TIENE_PLAN']) && $_SESSION['TIENE_PLAN'] === true;
                 <li><a href="pagppal.php">Planes</a></li>
                 <li><a href="misreservas.php">Mis reservas</a></li>
                 <li><a href="mispagos.php">Mis pagos</a></li>
-                <li class="activo">Calendario</a></li>
+                <li class="activo">Calendario </li>
                 <li><a href="cerrarsesion.php">Cerrar sesión</a></li>
             </ul>
         </aside>
@@ -58,12 +58,11 @@ $tienePlan = isset($_SESSION['TIENE_PLAN']) && $_SESSION['TIENE_PLAN'] === true;
                             <li>17/11/2025</li>
                             <li>24/11/2025</li>
                         </ul>
-                        <button style="background-color:#47b13b;">Reservado</button>
                     </div>
                 </div>
-                   <?php else: ?>
-                    <p>No tenés reservas activas.</p>
-                <?php endif; ?>
+            <?php else: ?>
+                <p>No tenés reservas activas.</p>
+            <?php endif; ?>
         </main>
     </div>
 </body>

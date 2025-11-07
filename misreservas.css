@@ -1,39 +1,39 @@
 /* la fuente que voy a usar en todos lados y el fondo general */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
 }
 
 /* el encabezado con logo */
 .header {
-  margin: 0;
-  background-image: url("imagenes/guitarra-landing.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  padding-left: 40px;
+    background-image: url("imagenes/guitarra-landing.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
 }
-/* mi logo Loop studio */
+
+/* mi logo Loop studio centrado visualmente*/
 
 .logo {
-  display: flex;
-  align-items: center;
-  font-size: 22px;
-  font-weight: bold;
-  margin-left: 42%;
-}
-/* mi icono LS */
-.icono {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  margin-right: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 42%;
 }
 
+/* caja negra LS */
+.icono {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
 
 .contenedor {
     display: flex;
@@ -82,7 +82,6 @@ body {
 
 .main h1 {
     margin-bottom: 40px;
-    font-size: 200px;
 }
 
 .card {
@@ -91,7 +90,6 @@ body {
     border-radius: 10px;
     width: 360px;
     padding: 20px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.1);
 }
 
 .card-content h3 {

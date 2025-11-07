@@ -1,43 +1,38 @@
-.body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fff;
-    color: #222;
+    color: #000000;
 }
 
+/* el encabezado con logo */
 .header {
-    background: #f2f2f2;
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    margin: 0;
     background-image: url("imagenes/guitarra-landing.jpg");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     height: 80px;
     display: flex;
     align-items: center;
-    padding-left: 40px;
-
+    padding-left: 80px;
 }
+
+/* mi logo Loop studio centrado visualmente*/
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.logo-box {
-    background: #000;
-    color: #fff;
+    font-size: 22px;
     font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
+    margin-left: 42%;
 }
 
-.nombre-logo {
-    font-size: 18px;
-    font-weight: 600;
+/* caja negra LS */
+.icono {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 8px;
 }
 
 .contenedor {
@@ -60,7 +55,6 @@
 
 .aside li {
     padding: 12px 20px;
-    cursor: pointer;
 }
 
 .aside li:hover {
@@ -91,7 +85,6 @@
     display: inline-block;
     background: #f9f9f9;
     border-radius: 10px;
-    overflow: hidden;
     width: 300px;
 }
 
@@ -99,6 +92,7 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .card-content {
@@ -112,7 +106,7 @@
 }
 
 .card-content p {
-    margin: 8px 0;
+    margin: 8px;
 }
 
 .card-content .subtexto {
@@ -122,14 +116,10 @@
 
 .card-content button {
     margin-top: 10px;
-    background-color: #47b13b;
+    background-color: #328828;
     color: #fff;
     border: none;
     padding: 10px 16px;
     border-radius: 6px;
-    cursor: pointer;
 }
 
-.card-content button:hover {
-    background-color: #47b13b;
-}

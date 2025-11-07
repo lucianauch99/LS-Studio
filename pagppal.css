@@ -96,6 +96,7 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .card-content {
@@ -109,7 +110,7 @@ body {
 }
 
 .card-content p {
-    margin: 8px 0;
+    margin: 8px;
 }
 
 .card-content .subtexto {
@@ -119,13 +120,14 @@ body {
 
 .card-content button {
     margin-top: 10px;
-    background-color: #0d4a4f;
+    background-color: #40a735;
     color: #fff;
     border: none;
     padding: 10px 16px;
     border-radius: 6px;
 }
 
+
 .card-content button:hover {
-    background-color: #12666d;
+    background-color: #328828;
 }
