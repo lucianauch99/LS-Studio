@@ -1,11 +1,11 @@
-/* Fuente y fondo general */
+/* la fuente que uso para todo y el fondo general */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: white;
 }
 
-/* Encabezado con logo */
+/* mi header/encabezado con logo */
 .header {
   margin: 0;
   background-image: url("imagenes/guitarra-landing.jpg");
@@ -16,6 +16,7 @@ body {
   align-items: center;
   padding-left: 40px;
 }
+/* mi loop studio logo */
 
 .logo {
   display: flex;
@@ -24,7 +25,7 @@ body {
   font-weight: bold;
   margin-left: 42%;
 }
-
+/* mi LS*/
 .icono {
   background-color: black;
   color: white;
@@ -33,7 +34,7 @@ body {
   margin-right: 8px;
 }
 
-/* Contenedor del formulario */
+/* el contendor del formulario */
 .contenedor {
   display: flex;
   justify-content: center;
@@ -41,7 +42,7 @@ body {
   height: 15cm;
 }
 
-/* Caja y color del formulario */
+/* la caja y color del formulario */
 .formulario {
   background-color: #d3d3d3;
   padding: 40px;
@@ -50,7 +51,7 @@ body {
 }
 
 
-/* Campos del formulario */
+/* los campos internos del formulario */
 input {
   width: 100%;
   padding: 12px;
@@ -58,7 +59,7 @@ input {
   border-radius: 6px;
 }
 
-/* Botón */
+/* el "boton" */
 button {
   width: 100%;
   background-color: black;
@@ -69,12 +70,12 @@ button {
   font-size: 14px;
 }
 
-/* Botón aclarado al pasar el mouse */
+/* aclaro boton cuando paso el mouse */
 button:hover {
   background-color: #333;
 }
 
-/* Texto de registro */
+/* el texto del registro */
 .registro {
   margin-top: 15px;
   font-size: 13px;

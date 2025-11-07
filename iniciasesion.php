@@ -1,62 +1,56 @@
 <?php
-session_start(); // array global que puedo mandar info entre las paginas
+session_start();
 include("conexiondb.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $email = $_POST['email'];
-  $contrasena = $_POST['contrasena']; // debe coincidir con el name del input
+    $email = $conexion->real_escape_string($_POST['email']);
+    $contrasena = $conexion->real_escape_string($_POST['contrasena']);
 
-  $sql = "SELECT * FROM usuarios WHERE email='$email' AND contrasena='$contrasena'";
-  $resultado = $conexion->query($sql);
+    $sql = "SELECT * FROM usuarios WHERE email='$email' AND contrasena='$contrasena'";
+    $resultado = $conexion->query($sql);
 
-  // Verificamos si hay coincidencias
-  if ($resultado->num_rows > 0) {
-    $fila = $resultado->fetch_assoc(); // extrigo los datos del usuario
+    if ($resultado && $resultado->num_rows > 0) {
+        $usuario = $resultado->fetch_assoc();
 
-    // Guardamos datos en la sesión
-    $_SESSION['NOMBRE_USUARIO'] = $fila['nombre'];
-    $_SESSION['EMAIL_USUARIO'] = $fila['email'];
-    $_SESSION['ID_USUARIO'] = $fila['id'];
+        $_SESSION['NOMBRE_USUARIO'] = $usuario['nombre'];
+        $_SESSION['EMAIL_USUARIO'] = $usuario['email'];
+        $_SESSION['ID_USUARIO'] = $usuario['id'];
 
-    // Si es el admin fuerzo el login
-    if ($_SESSION['EMAIL_USUARIO'] == "lucianauch123@gmail.com") {
-      header('Location: pagppalADM.php');
-      exit;
+        // Verifico si el usuario ya tiene un plan comprado en la BD
+        $usuario_id = (int)$usuario['id'];
+        $sqlPlan = "SELECT * FROM compras WHERE usuario_id = $usuario_id";
+        $resPlan = $conexion->query($sqlPlan);
+        $_SESSION['TIENE_PLAN'] = ($resPlan && $resPlan->num_rows > 0);
+
+        header('Location: pagppal.php');
+        exit;
     } else {
-      header('Location: pagppal.php');
-      exit;
+        header('Location: iniciasesion.php?error=1');
+        exit;
     }
-
-  } else {
-    // Si no hay coincidencia
-    header('Location: iniciasesion.php');
-    exit;
-  }
 }
 ?>
+<!-- HTML del login (igual que el tuyo) -->
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesión</title>
-      <link rel="stylesheet" href="iniciasesion.css">
+    <title>Iniciar sesión</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="iniciasesion.css">
 </head>
 
 <body>
-
-    <!-- Encabezado con logo -->
+      <!-- mi header/encabezado con logo -->
     <header class="header">
-        <h1 class="logo">
-            <span class="icono">LS</span> Loop Studio
-        </h1>
+        <h1 class="logo"><span class="icono">LS</span> Loop Studio</h1>
     </header>
-
-    <!-- Contenedor del formulario -->
+  <!-- mi contenido principal con el formulario -->
     <main class="contenedor">
         <div class="formulario">
             <h2>Inicia sesión en tu cuenta</h2>
@@ -65,11 +59,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="password" name="contrasena" placeholder="Contraseña" required>
                 <button type="submit">Iniciar sesión</button>
             </form>
-            <p class="registro">¿Aún no tienes una cuenta? <a href="registrate.php" class="link">Regístrate</a></p>
-            </p>
+            <p>¿Aún no tienes una cuenta? <a href="registrate.php">Regístrate</a></p>
         </div>
     </main>
-
 </body>
 
 </html>

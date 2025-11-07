@@ -1,19 +1,17 @@
 <?php
-//creo variables
-
+// creo variables
 $nombreservidor = "localhost";
-$contrasena = "";
 $nombreusuario = "root";
+$contrasena = "";
 $database = "loopstudio_db";
 
-//creo la conexion 
-
+// creo la conexión 
 $conexion = new mysqli($nombreservidor, $nombreusuario, $contrasena, $database);
 
-//verifico la conexion 
-if ($conexion->errno) { //errno metodo para traer el numero del error
-    die("Error de conexion" . $conexion->$errno);
-    //mata la conexion y me muestra el mensaje
+// verifico la conexión 
+if ($conexion->connect_errno) { 
+    die("Error de conexión: " . $conexion->connect_error);
 }
-//si todo esta bien no entra al if y muestra conexion exitosa
-//echo "Conexion exitosa";
+
+// no echo para evitar 'headers already sent'
+?>

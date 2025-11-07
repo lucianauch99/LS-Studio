@@ -2,41 +2,45 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fff;
-    color: #222;
+    color: #000000;
 }
 
+/* === HEADER === */
 .header {
-    background: #f2f2f2;
-    padding: 10px 30px;
+    background-image: url("imagenes/guitarra-landing.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding-left: 80px;
 }
 
+/* Logo "LS Loop Studio" centrado visualmente */
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.logo-box {
-    background: #000;
-    color: #fff;
+    font-size: 22px;
     font-weight: bold;
-    padding: 8px 12px;
+    margin-left: 42%;
+}
+
+/* Caja negra "LS" */
+.icono {
+    background-color: black;
+    color: white;
+    padding: 10px;
     border-radius: 5px;
+    margin-right: 8px;
 }
 
-.nombre-logo {
-    font-size: 18px;
-    font-weight: 600;
-}
-
+/* === ESTRUCTURA GENERAL === */
 .contenedor {
     display: flex;
     min-height: calc(100vh - 60px);
 }
 
+/* === ASIDE === */
 .aside {
     width: 180px;
     background-color: #fafafa;
@@ -69,6 +73,7 @@ body {
     color: inherit;
 }
 
+/* === CONTENIDO PRINCIPAL === */
 .main {
     flex: 1;
     padding: 40px;
@@ -79,12 +84,11 @@ body {
     margin-bottom: 40px;
 }
 
+/* === TARJETA PLAN === */
 .card {
     display: inline-block;
     background: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
     width: 300px;
 }
 
@@ -120,7 +124,6 @@ body {
     border: none;
     padding: 10px 16px;
     border-radius: 6px;
-    cursor: pointer;
 }
 
 .card-content button:hover {

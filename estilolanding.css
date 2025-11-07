@@ -1,10 +1,10 @@
 
 
-/* Fondo general con imagen */
+/* mi fondo gral de landing con la imagen */
 body {
   margin:0;
   font-family: Arial, sans-serif;
-  background-image: url("imagenes/guitarra-landing.jpg"); /* cambia la ruta si hace falta */
+  background-image: url("imagenes/guitarra-landing.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -13,12 +13,13 @@ body {
   flex-direction: column;
 }
 
-/* Encabezado con logo */
+/* mi encabezado  con logo */
 .header {
   display: flex;
   align-items: center;
   padding-left: 44%;
 }
+/* mi logo */
 
 .logo {
   display: flex;
@@ -26,6 +27,7 @@ body {
   font-size: 22px;
   font-weight: bold;
 }
+/* mi icono LS */
 
 .icono {
   background-color: black;
@@ -46,13 +48,13 @@ body {
   gap: 20px;
 }
 
-/* Texto principal */
+/* el texto principal */
 .contenido h2 {
   font-size: 28px;
   font-weight: bold;
 }
 
-/* Botón */
+/* mi "boton" */
 .boton {
   background-color: black;
   color: white;
@@ -62,7 +64,7 @@ body {
   font-size: 14px;
 }
 
-/* Efecto al pasar el mouse */
+/* se aclara el boton cuando paso el mouse*/
 .boton:hover {
   background-color: #333;
 }

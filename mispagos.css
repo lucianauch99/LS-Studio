@@ -1,4 +1,4 @@
-body {
+.body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -10,7 +10,15 @@ body {
     padding: 10px 30px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0;
+    background-image: url("imagenes/guitarra-landing.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+
 }
 
 .logo {
@@ -83,7 +91,6 @@ body {
     display: inline-block;
     background: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     width: 300px;
 }
