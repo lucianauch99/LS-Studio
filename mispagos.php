@@ -58,7 +58,6 @@ $nombreUsuario = $_SESSION['NOMBRE_USUARIO'];
 </head>
 
 <body>
-      <!-- mi header/encabezado con el logo -->
 
      <!-- mi header con el logo -->
     <header class="header">

@@ -36,14 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<!-- HTML de registro (igual que el tuyo) -->
-<!DOCTYPE html>
-<html lang="es">
-<head> ... tu head ... </head>
-<body>
-  <!-- tu HTML de form -->
-</body>
-</html>
 
 <!DOCTYPE html>
 <html lang="es">

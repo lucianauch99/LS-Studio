@@ -40,7 +40,6 @@ $_SESSION['TIENE_PLAN'] = ($resultadoPlan && $resultadoPlan->num_rows > 0);
 // recupero estado actual
 $tienePlan = isset($_SESSION['TIENE_PLAN']) && $_SESSION['TIENE_PLAN'] === true;
 ?>
-<!-- luego tu HTML (igual que el que ya tienes) -->
 
 <!DOCTYPE html>
 <html lang="es">

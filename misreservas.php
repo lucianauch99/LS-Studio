@@ -24,7 +24,6 @@ if ($resultado && $resultado->num_rows > 0) {
     $tienePlan = false;
 }
 ?>
-<!-- HTML de Mis Reservas (igual que ya tenías) -->
 
 <!DOCTYPE html>
 <html lang="es">
